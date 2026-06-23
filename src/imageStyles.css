@@ -1,41 +1,9 @@
-.familyImage {
-  width: 100%;
-  height: 128px;
-  border-radius: 18px;
-  overflow: hidden;
-  border: 1px solid rgba(0,0,0,.08);
-  background: #eef7f1;
-  margin: 12px 0;
-  position: relative;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4), 0 10px 26px rgba(0,0,0,.10);
-}
-.familyImage img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-  display: block;
-  background: #eef7f1;
-  padding: 6px;
-}
-.familyImageModal {
-  height: 280px;
-  border-radius: 24px;
-  margin: 20px 0 8px;
-}
-.familyImageModal img {
-  object-fit: contain;
-  object-position: center;
-  padding: 8px;
-}
-.familyCard {
-  min-height: 390px;
-}
-.familyCard .preview {
-  margin-top: 10px;
-}
-@media(max-width:560px){
-  .familyImage{height:118px}
-  .familyImageModal{height:210px}
-  .familyCard{min-height:410px}
-}
+.familyImage{width:100%;height:138px;border-radius:22px;overflow:hidden;border:1px solid rgba(0,0,0,.08);background:linear-gradient(135deg,#eef7f1,#ffffff);margin:12px 0;position:relative;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55),0 12px 30px rgba(0,0,0,.12)}
+.familyImage img{width:100%;height:100%;object-fit:contain;object-position:center;display:block;background:#eef7f1;padding:7px;transition:transform .45s ease,filter .45s ease}.familyCard:hover .familyImage img{transform:scale(1.045);filter:saturate(1.08) contrast(1.04)}
+.familyImageModal{height:290px;border-radius:26px;margin:20px 0 8px}.familyImageModal img{object-fit:contain;object-position:center;padding:8px}
+.familyCard{min-height:405px;backdrop-filter:blur(12px);transform-style:preserve-3d}.familyCard:hover{transform:translateY(-9px) scale(1.01)}
+.hero h1{filter:drop-shadow(0 18px 38px rgba(0,0,0,.35));animation:heroIn .8s ease both}.badge,.subtitle,.stats{animation:fadeUp .75s ease both}.scheme,.intro,.orderBlock{animation:fadeUp .65s ease both}.box,.serpentBtn span,.serpentBtn strong{box-shadow:0 18px 55px rgba(0,0,0,.28)}
+.serpentBtn span{position:relative;overflow:hidden}.serpentBtn span:after{content:'';position:absolute;inset:-80%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.22),transparent);transform:translateX(-55%) rotate(12deg);animation:shine 5s ease-in-out infinite}.controls label{transition:transform .25s ease,box-shadow .25s ease}.controls label:focus-within{transform:translateY(-3px);box-shadow:0 22px 60px rgba(0,0,0,.28)}
+.modal{animation:modalPop .35s ease both}.species,.traits span{transition:transform .22s ease}.species:hover,.traits span:hover{transform:translateY(-2px)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@keyframes heroIn{from{opacity:0;transform:scale(.96) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}@keyframes modalPop{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}@keyframes shine{0%,60%{transform:translateX(-70%) rotate(12deg)}100%{transform:translateX(70%) rotate(12deg)}}
+@media(max-width:560px){.familyImage{height:122px}.familyImageModal{height:220px}.familyCard{min-height:420px}}
